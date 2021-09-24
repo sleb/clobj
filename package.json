@@ -1,0 +1,36 @@
+{
+  "name": "clobj",
+  "version": "0.0.1",
+  "description": "Yet another Javascript clone object lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sleb/clobj.git"
+  },
+  "keywords": [
+    "fast",
+    "object",
+    "clone",
+    "javascript",
+    "js"
+  ],
+  "author": "github.com/sleb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sleb/clobj/issues"
+  },
+  "homepage": "https://github.com/sleb/clobj#readme",
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "benchmark": "^2.1.4",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.4.1",
+    "rfdc": "^1.3.0"
+  }
+}
