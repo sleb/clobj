@@ -1,9 +1,7 @@
-import rfdc from "rfdc";
-import Benchmark from "benchmark";
-import { clobj } from "./index.js";
-import { readFile } from "fs/promises";
-
-const data = readFile("./package-lock.json").then((value) => value.toJSON());
+const rfdc = require("rfdc");
+const Benchmark = require("benchmark");
+const { clobj } = require(".");
+const data = require("./package-lock.json");
 
 const suite = new Benchmark.Suite();
 

@@ -1,5 +1,5 @@
-import test from "ava";
-import { clobj } from "./index.js";
+const test = require("ava");
+const { clobj } = require(".");
 
 test("numbers", (t) => {
   for (const num of [-42, 0, 42]) {
@@ -58,6 +58,12 @@ test("TypedArrays", (t) => {
     t.not(clobj(arr), arr);
     t.deepEqual(clobj(arr), arr);
   }
+});
+
+test("Sets", (t) => {
+  const s = new Set([1, 3, 5]);
+  t.not(clobj(s), s);
+  t.deepEqual(clobj(s), s);
 });
 
 test("arrays", (t) => {

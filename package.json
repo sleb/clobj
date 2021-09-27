@@ -4,9 +4,10 @@
   "description": "Yet another Javascript clone object lib",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "coverage": "nyc ava",
+    "bench": "node benchmark"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sleb/clobj.git"
@@ -30,6 +31,7 @@
     "eslint": "^7.32.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.3.0",
+    "nyc": "^15.1.0",
     "prettier": "2.4.1",
     "rfdc": "^1.3.0"
   }
